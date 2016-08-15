@@ -36,18 +36,8 @@
     },
     "extends": "eslint:recommended",
     "rules": {
-      "complexity": [
-        "error",
-        {
-          "max": 6
-        }
-      ],
-      "max-depth": [
-        "error",
-        {
-          "max": 4
-        }
-      ]
+      "complexity": [ "error", 6 ]
+    , "max-depth": [ "error", 4 ]
     }
   },
   "devDependencies": {
