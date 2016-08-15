@@ -2,6 +2,5 @@ language: node_js
 node_js:
 - "6"
 after_script:
-- "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
 - "./node_modules/.bin/codeclimate < ./coverage/lcov.info"
 - bash <(curl -s https://codecov.io/bash)
