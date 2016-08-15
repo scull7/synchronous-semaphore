@@ -1,8 +1,9 @@
 language: node_js
 node_js:
-  - "6"
-  - "5"
-  - "4"
+- "6"
+- "5"
+- "4"
 after_script:
-  - "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
-  - "CODECLIMATE_REPO_TOKEN=731e59dc1b8ab8e0595a06ca8ae59fff42813bd45c3027d6288540b49027986f ./node_modules/.bin/codeclimate < ./coverage/lcov.info"
+- "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+- "./node_modules/.bin/codeclimate < ./coverage/lcov.info"
+- bash <(curl -s https://codecov.io/bash)
