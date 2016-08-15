@@ -1,0 +1,58 @@
+{
+  "name": "synchronous-semaphore",
+  "version": "0.0.1",
+  "description": "A synchronously locking semaphore that you can access asynchronously",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scull7/synchronous-semaphore.git"
+  },
+  "keywords": [
+    "concurrent",
+    "semaphore",
+    "lock"
+  ],
+  "author": "Nathan A Sculli <scull7@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scull7/synchronous-semaphore/issues"
+  },
+  "homepage": "https://github.com/scull7/synchronous-semaphore#readme",
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "env": {
+      "node": true
+    },
+    "globals": {
+      "Promise": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "complexity": [
+        "error",
+        {
+          "max": 6
+        }
+      ],
+      "max-depth": [
+        "error",
+        {
+          "max": 4
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^3.0.2"
+  }
+}
