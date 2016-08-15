@@ -1,6 +1,6 @@
 {
   "name": "synchronous-semaphore",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A synchronously locking semaphore that you can access asynchronously",
   "main": "index.js",
   "directories": {
@@ -36,8 +36,14 @@
     },
     "extends": "eslint:recommended",
     "rules": {
-      "complexity": [ "error", 6 ]
-    , "max-depth": [ "error", 4 ]
+      "complexity": [
+        "error",
+        6
+      ],
+      "max-depth": [
+        "error",
+        4
+      ]
     }
   },
   "devDependencies": {
